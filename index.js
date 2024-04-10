@@ -37,7 +37,7 @@ app.use(router);
 // app.use('/api/notification', notificationRouter)
 
 // Define the port
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8050;
 
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to the API!" });

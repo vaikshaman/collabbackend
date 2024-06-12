@@ -11,7 +11,7 @@ import path from 'path';
 
 
 // Configure dotenv
-dotenv.config();
+// dotenv.config();
 
 // Connect to MongoDB
 // connectDB();

@@ -1,40 +1,40 @@
 // Import statements
 import express from "express";
-import dotenv from 'dotenv';
-import cors from 'cors';
-import connectDB from './config/db.js';
-import bodyParser from "body-parser";
-import mongoose from "mongoose";
+// import dotenv from 'dotenv';
+// import cors from 'cors';
+// import connectDB from './config/db.js';
+// import bodyParser from "body-parser";
+// import mongoose from "mongoose";
+// import router from './routes/router.js';
+// import path from 'path';
 
-import path from 'path';
 
 
+// // Configure dotenv
+// dotenv.config();
 
-// Configure dotenv
-dotenv.config();
-
-// Connect to MongoDB
-connectDB();
+// // Connect to MongoDB
+// connectDB();
 
 // Create an instance of Express
 const app = express();
-app.use(cors({origin:["http://localhost:3000"]}));
+// app.use(cors({origin:["http://localhost:3000"]}));
 
-// Set view engine
-app.set("view engine", "es");
+// // Set view engine
+// app.set("view engine", "es");
 
-// Serve static files from the 'public' directory
-app.use(express.static('public'));
-//for accessing uploads folder
+// // Serve static files from the 'public' directory
+// app.use(express.static('public'));
+// //for accessing uploads folder
 
 
-// Middleware for parsing incoming request bodies
-app.use(express.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// // Middleware for parsing incoming request bodies
+// app.use(express.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
 
-// Use router middleware
-
-// app.use('/api/notification', notificationRouter)
+// // Use router middleware
+// app.use(router);
+// // app.use('/api/notification', notificationRouter)
 
 // Define the port
 const PORT = process.env.PORT || 8050;

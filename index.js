@@ -10,11 +10,11 @@ import path from 'path';
 
 
 
-// // Configure dotenv
-// dotenv.config();
+// Configure dotenv
+dotenv.config();
 
-// // Connect to MongoDB
-// connectDB();
+// Connect to MongoDB
+connectDB();
 
 // Create an instance of Express
 const app = express();

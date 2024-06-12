@@ -1,12 +1,12 @@
 // Import statements
 import express from "express";
-// import dotenv from 'dotenv';
-// import cors from 'cors';
-// import connectDB from './config/db.js';
-// import bodyParser from "body-parser";
-// import mongoose from "mongoose";
-// import router from './routes/router.js';
-// import path from 'path';
+import dotenv from 'dotenv';
+import cors from 'cors';
+import connectDB from './config/db.js';
+import bodyParser from "body-parser";
+import mongoose from "mongoose";
+import router from './routes/router.js';
+import path from 'path';
 
 
 

@@ -5,7 +5,7 @@ import cors from 'cors';
 import connectDB from './config/db.js';
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
-import router from './routes/router.js';
+
 import path from 'path';
 
 
@@ -33,7 +33,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Use router middleware
-app.use(router);
+
 // app.use('/api/notification', notificationRouter)
 
 // Define the port

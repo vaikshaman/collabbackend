@@ -33,7 +33,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Use router middleware
-app.use(router);
+// app.use(router);
 // app.use('/api/notification', notificationRouter)
 
 // Define the port

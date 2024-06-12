@@ -7,7 +7,7 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import router from './routes/router.js';
 import path from 'path';
-const uploadsDirectory = path.join(process.cwd(), 'uploads');
+
 
 
 // Configure dotenv

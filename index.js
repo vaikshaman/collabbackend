@@ -26,7 +26,7 @@ app.set("view engine", "es");
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
 //for accessing uploads folder
-app.use('/uploads', express.static(uploadsDirectory));
+
 
 // Middleware for parsing incoming request bodies
 app.use(express.urlencoded({ extended: true }));

@@ -14,27 +14,27 @@ import path from 'path';
 dotenv.config();
 
 // Connect to MongoDB
-connectDB();
+// connectDB();
 
 // Create an instance of Express
 const app = express();
-// app.use(cors({origin:["http://localhost:3000"]}));
+app.use(cors({origin:["http://localhost:3000"]}));
 
-// // Set view engine
-// app.set("view engine", "es");
+// Set view engine
+app.set("view engine", "es");
 
-// // Serve static files from the 'public' directory
-// app.use(express.static('public'));
-// //for accessing uploads folder
+// Serve static files from the 'public' directory
+app.use(express.static('public'));
+//for accessing uploads folder
 
 
-// // Middleware for parsing incoming request bodies
-// app.use(express.urlencoded({ extended: true }));
-// app.use(bodyParser.json());
+// Middleware for parsing incoming request bodies
+app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-// // Use router middleware
-// app.use(router);
-// // app.use('/api/notification', notificationRouter)
+// Use router middleware
+app.use(router);
+// app.use('/api/notification', notificationRouter)
 
 // Define the port
 const PORT = process.env.PORT || 8050;
